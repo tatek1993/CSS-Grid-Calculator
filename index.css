@@ -1,28 +1,34 @@
 * {
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
     background-color: whitesmoke;
     padding: 40px;
+     
 }
 .calculator {
     max-width: 500px;
     margin: 0 auto;
     border: 3px solid black;
     border-radius: 10px;
+    background-color: rgb(59, 58, 58);
+    background-image: linear-gradient(to bottom right, rgb(19, 17, 17), rgb(73, 71, 71));
 
 }
 
 .display {
-    background: rgba(172, 255, 47, 0.609);
+    background: rgba(191, 255, 95, 0.842);
     border: none;
-    box-shadow: none;
+    box-shadow: inset 5px 5px rgba(135, 180, 68, 0.842);
     width: 100%;
-    border: 10px solid whitesmoke;
+    border: 10px solid rgb(29, 27, 27);
     padding: 25px;
     font-size: 50px;
-    border-radius: 10px;
+    border-radius: 15px;
+    font-family: 'Press Start 2P', cursive; 
+    
 }
 
 .button-layout {
@@ -34,13 +40,22 @@ body {
 
 .button {
     background: gray;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 25px;
     font-size: 25px;
-    border-radius: 5px;
+    border-radius: 15px;
     color: white;
+    box-shadow: 3px 3px rgb(12, 11, 11);
 }
 
 .long-button {
+    grid-column: span 3;
+}
 
+.clear {
+    background-color: rgb(0, 89, 255);
+}
+
+.equals {
+    background-color: rgb(15, 175, 95);
 }
